@@ -6,7 +6,7 @@ namespace TM {
 		_patchVertexCount = 0;
 		_enabledVertexAttribArrays = 0;
 		for (int i = 0; i < 8; i++) {
-			//_vertexBuffersArr[i] = nullptr;
+			_vertexBuffersArr[i] = nullptr;
 		}
 	}
 

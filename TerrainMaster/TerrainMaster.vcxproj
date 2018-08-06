@@ -131,11 +131,15 @@
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\TerrainMaster\Render\Mesh\Mesh.cpp" />
     <ClCompile Include="Source\TerrainMaster\Render\Mesh\VertexBuffer.cpp" />
+    <ClCompile Include="Source\TerrainMaster\Render\Renderer.cpp" />
     <ClCompile Include="Source\TerrainMaster\Render\RenderState.cpp" />
+    <ClCompile Include="Source\TerrainMaster\Render\Shader.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\Buffers\Buffers.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\Buffers\FloatBuffer.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\Buffers\IntBuffer.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\ColorRGBA.cpp" />
+    <ClCompile Include="Source\TerrainMaster\Utils\File.cpp" />
+    <ClCompile Include="Source\TerrainMaster\Utils\Files.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\NativeObject.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,11 +147,14 @@
     <ClInclude Include="Source\TerrainMaster\Render\Mesh\VertexBuffer.h" />
     <ClInclude Include="Source\TerrainMaster\Render\Renderer.h" />
     <ClInclude Include="Source\TerrainMaster\Render\RenderState.h" />
+    <ClInclude Include="Source\TerrainMaster\Render\Shader.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\Buffers.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\Buffer.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\FloatBuffer.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\IntBuffer.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\ColorRGBA.h" />
+    <ClInclude Include="Source\TerrainMaster\Utils\File.h" />
+    <ClInclude Include="Source\TerrainMaster\Utils\Files.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\NativeObject.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\SharedPtr.h" />
   </ItemGroup>
