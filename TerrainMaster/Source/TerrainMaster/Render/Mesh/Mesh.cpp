@@ -39,6 +39,14 @@ namespace TM {
 		}
 	}
 
+	void Mesh::SetData(MeshBuffer::Type type, int components, FloatBufferPtr buffer) {
+		SetData(type, components, std::dynamic_pointer_cast<TM::Buffer>(buffer));
+	}
+
+	void Mesh::SetData(MeshBuffer::Type type, int components, IntBufferPtr buffer) {
+		SetData(type, components, std::dynamic_pointer_cast<TM::Buffer>(buffer));
+	}
+
 	void Mesh::SetVertexBuffer(MeshBuffer::Type type, VertexBufferPtr buffer) {
 		_vertexBuffersArr[(int)type] = buffer;
 	}

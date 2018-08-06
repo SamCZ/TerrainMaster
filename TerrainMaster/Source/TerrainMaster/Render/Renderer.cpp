@@ -228,18 +228,18 @@ namespace TM {
 			}
 			glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ib->GetId());
 			if (mesh->GetInstanceCount() > 1) {
-				glDrawElementsInstanced((GLenum)mesh->GetMode(), ib->GetBuffer()->Size(), ConvertFormat(ib->GetFormat()), 0, mesh->GetInstanceCount());
+				glDrawElementsInstanced((GLenum)mesh->GetMode(), static_cast<GLsizei>(ib->GetBuffer()->Size()), ConvertFormat(ib->GetFormat()), 0, mesh->GetInstanceCount());
 			}
 			else {
-				glDrawElements((GLenum)mesh->GetMode(), ib->GetBuffer()->Size(), ConvertFormat(ib->GetFormat()), 0);
+				glDrawElements((GLenum)mesh->GetMode(), static_cast<GLsizei>(ib->GetBuffer()->Size()), ConvertFormat(ib->GetFormat()), 0);
 			}
 		}
 		else if (pb != nullptr) {
 			if (mesh->GetInstanceCount() > 1) {
-				glDrawArraysInstanced((GLenum)mesh->GetMode(), 0, pb->GetBuffer()->Size() / pb->GetNumComponents(), mesh->GetInstanceCount());
+				glDrawArraysInstanced((GLenum)mesh->GetMode(), 0, static_cast<GLsizei>(pb->GetBuffer()->Size() / pb->GetNumComponents()), mesh->GetInstanceCount());
 			}
 			else {
-				glDrawArrays((GLenum)mesh->GetMode(), 0, pb->GetBuffer()->Size() / pb->GetNumComponents());
+				glDrawArrays((GLenum)mesh->GetMode(), 0, static_cast<GLsizei>(pb->GetBuffer()->Size() / pb->GetNumComponents()));
 			}
 		}
 		for (int i = 0; i < mesh->_enabledVertexAttribArrays; i++) {

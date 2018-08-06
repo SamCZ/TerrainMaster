@@ -33,6 +33,8 @@ namespace TM {
 		~Mesh();
 
 		void SetData(MeshBuffer::Type type, int components, BufferPtr buffer);
+		void SetData(MeshBuffer::Type type, int components, FloatBufferPtr buffer);
+		void SetData(MeshBuffer::Type type, int components, IntBufferPtr buffer);
 
 		void SetVertexBuffer(MeshBuffer::Type type, VertexBufferPtr buffer);
 		VertexBufferPtr GetVertexBuffer(MeshBuffer::Type type);

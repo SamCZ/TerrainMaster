@@ -92,11 +92,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\PrivateProjects\TerrainMaster\TerrainMaster\Source;D:\Lib\glm;D:\Lib\glew-2.1.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\PrivateProjects\TerrainMaster\TerrainMaster\Source;D:\Lib\glm;D:\Lib\glew-2.1.0\include;D:\Lib\SDL2-2.0.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>D:\Lib\glew-2.1.0\lib\Release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>OpenGL32.lib;glew32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Lib\glew-2.1.0\lib\Release\x64;D:\Lib\SDL2-2.0.8\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2main.lib;SDL2.lib;OpenGL32.lib;glew32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>NotSet</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,6 +142,7 @@
     <ClCompile Include="Source\TerrainMaster\Utils\File.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\Files.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\NativeObject.cpp" />
+    <ClCompile Include="Source\TerrainMaster\Window\Display.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\TerrainMaster\Render\Mesh\Mesh.h" />
@@ -148,6 +150,8 @@
     <ClInclude Include="Source\TerrainMaster\Render\Renderer.h" />
     <ClInclude Include="Source\TerrainMaster\Render\RenderState.h" />
     <ClInclude Include="Source\TerrainMaster\Render\Shader.h" />
+    <ClInclude Include="Source\TerrainMaster\Window\CursorType.h" />
+    <ClInclude Include="Source\TerrainMaster\Window\Display.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\Buffers.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\Buffer.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\FloatBuffer.h" />

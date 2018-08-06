@@ -3,7 +3,7 @@
 #include <memory>
 
 #include "TerrainMaster/Utils/NativeObject.h"
-#include "TerrainMaster/Utils/Buffers/Buffer.h"
+#include "TerrainMaster/Utils/Buffers/Buffers.h"
 
 namespace TM {
 	namespace MeshBuffer {

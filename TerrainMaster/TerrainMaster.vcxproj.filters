@@ -54,6 +54,9 @@
     <ClCompile Include="Source\TerrainMaster\Utils\Files.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\TerrainMaster\Window\Display.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\Buffer.h">
@@ -96,6 +99,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\TerrainMaster\Utils\Files.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TerrainMaster\Window\CursorType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TerrainMaster\Window\Display.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
