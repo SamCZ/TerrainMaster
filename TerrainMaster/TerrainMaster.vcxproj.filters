@@ -57,6 +57,18 @@
     <ClCompile Include="Source\TerrainMaster\Window\Display.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\TerrainMaster\Utils\Timing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TerrainMaster\Scene\Spatial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TerrainMaster\Collisions\Ray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\TerrainMaster\Scene\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\Buffer.h">
@@ -105,6 +117,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\TerrainMaster\Window\Display.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TerrainMaster\Utils\Timing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TerrainMaster\Utils\Platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TerrainMaster\Utils\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TerrainMaster\Scene\Spatial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TerrainMaster\Scene\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TerrainMaster\Collisions\Ray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\TerrainMaster\Control\FPSControl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

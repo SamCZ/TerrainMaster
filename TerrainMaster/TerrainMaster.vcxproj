@@ -93,6 +93,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\PrivateProjects\TerrainMaster\TerrainMaster\Source;D:\Lib\glm;D:\Lib\glew-2.1.0\include;D:\Lib\SDL2-2.0.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>D:\Lib\glew-2.1.0\lib\Release\x64;D:\Lib\SDL2-2.0.8\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
@@ -130,11 +131,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\TerrainMaster\Collisions\Ray.cpp" />
     <ClCompile Include="Source\TerrainMaster\Render\Mesh\Mesh.cpp" />
     <ClCompile Include="Source\TerrainMaster\Render\Mesh\VertexBuffer.cpp" />
     <ClCompile Include="Source\TerrainMaster\Render\Renderer.cpp" />
     <ClCompile Include="Source\TerrainMaster\Render\RenderState.cpp" />
     <ClCompile Include="Source\TerrainMaster\Render\Shader.cpp" />
+    <ClCompile Include="Source\TerrainMaster\Scene\Camera.cpp" />
+    <ClCompile Include="Source\TerrainMaster\Scene\Spatial.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\Buffers\Buffers.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\Buffers\FloatBuffer.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\Buffers\IntBuffer.cpp" />
@@ -142,14 +146,22 @@
     <ClCompile Include="Source\TerrainMaster\Utils\File.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\Files.cpp" />
     <ClCompile Include="Source\TerrainMaster\Utils\NativeObject.cpp" />
+    <ClCompile Include="Source\TerrainMaster\Utils\Timing.cpp" />
     <ClCompile Include="Source\TerrainMaster\Window\Display.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\TerrainMaster\Collisions\Ray.h" />
+    <ClInclude Include="Source\TerrainMaster\Control\FPSControl.h" />
     <ClInclude Include="Source\TerrainMaster\Render\Mesh\Mesh.h" />
     <ClInclude Include="Source\TerrainMaster\Render\Mesh\VertexBuffer.h" />
     <ClInclude Include="Source\TerrainMaster\Render\Renderer.h" />
     <ClInclude Include="Source\TerrainMaster\Render\RenderState.h" />
     <ClInclude Include="Source\TerrainMaster\Render\Shader.h" />
+    <ClInclude Include="Source\TerrainMaster\Scene\Camera.h" />
+    <ClInclude Include="Source\TerrainMaster\Scene\Spatial.h" />
+    <ClInclude Include="Source\TerrainMaster\Utils\Common.h" />
+    <ClInclude Include="Source\TerrainMaster\Utils\Platform.h" />
+    <ClInclude Include="Source\TerrainMaster\Utils\Timing.h" />
     <ClInclude Include="Source\TerrainMaster\Window\CursorType.h" />
     <ClInclude Include="Source\TerrainMaster\Window\Display.h" />
     <ClInclude Include="Source\TerrainMaster\Utils\Buffers\Buffers.h" />
